@@ -35,7 +35,7 @@ function HomePage() {
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">Match with Lenders/Investors</Typography>
                                 <Typography variant="body2" color="textSecondary">Find the best funding options that match your profile.</Typography>
-                                <Button variant="contained" color="primary" style={{ marginTop: '1rem' }}>Find Matches</Button>
+                                <Button variant="contained" color="primary" style={{ marginTop: '1rem' }} href="/match">Find Matches</Button>
                             </CardContent>
                         </Card>
                     </Box>
