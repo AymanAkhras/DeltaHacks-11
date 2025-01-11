@@ -1,0 +1,87 @@
+/* index.css */
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body takes the full height of the viewport */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Basic styles for common HTML elements */
+body {
+  line-height: 1.6;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default form element styling */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  outline: none;
+}
+
+/* Set default box-sizing for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset specific element properties */
+h1, h2, h3, h4, h5, h6, p, blockquote, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* Additional resets for various HTML elements */
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: dotted;
+}
+
+code, kbd, samp, pre {
+  font-family: monospace, monospace;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+button, input[type="reset"], input[type="button"], input[type="submit"], input[type="file"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
