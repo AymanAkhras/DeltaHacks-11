@@ -8,7 +8,7 @@ const theme = createTheme({
             paper: '#ffffff',
         },
         primary: {
-            main: '#58a6ff',  // Custom primary blue color
+            main: '#293132',  // Custom primary blue color
         },
         secondary: {
             main: '#f9826c',  // Custom secondary color
@@ -19,9 +19,26 @@ const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: 'Roboto, Arial, sans-serif',
+        fontFamily: 'Roboto, Arial, sans-serif', // Updated font family
     },
     components: {
+        MuiTextField: {
+            styleOverrides: {
+                root: {
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: '#474044',  // Outline color
+                        },
+                        '&:hover fieldset': {
+                            borderColor: '#474044',  // Outline color on hover
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: '#474044',  // Outline color when focused
+                        },
+                    },
+                },
+            },
+        },
         MuiButton: {
             styleOverrides: {
                 root: {
@@ -31,6 +48,16 @@ const theme = createTheme({
                         backgroundColor: '#474044',  // Darker shade on hover
                     },
                     color: '#fff',  // White text color
+                    borderColor: '#474044', // Outline color for button
+                    '&:hover': {
+                        borderColor: '#474044', // Outline color on hover
+                    },
+                },
+                outlined: {
+                    borderColor: '#474044',  // Outline color for outlined button
+                    '&:hover': {
+                        borderColor: '#474044',  // Outline color for outlined button on hover
+                    },
                 },
             },
         },
