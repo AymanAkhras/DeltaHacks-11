@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, CardMedia, Typography, Button, AppBar, Toolbar, IconButton, } from '@mui/material';
+import { Container, Box, Card, CardContent, CardMedia, Typography, Button, AppBar, Toolbar, IconButton, } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function HomePage() {
@@ -14,8 +14,8 @@ function HomePage() {
                 </Toolbar>
             </AppBar>
             <Container>
-                <Grid container spacing={4} style={{ marginTop: '2rem' }}>
-                    <Grid item xs={12} md={6}>
+                <Box container spacing={4} style={{ marginTop: '2rem' }}>
+                    <Box item xs={12} md={6}>
                         <Card>
                             <CardMedia
                                 component="img"
@@ -30,8 +30,8 @@ function HomePage() {
                                 <Button variant="contained" color="primary" style={{ marginTop: '1rem' }}>Get Started</Button>
                             </CardContent>
                         </Card>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
+                    </Box>
+                    <Box item xs={12} md={6}>
                         <Card>
                             <CardMedia
                                 component="img"
@@ -46,8 +46,8 @@ function HomePage() {
                                 <Button variant="contained" color="primary" style={{ marginTop: '1rem' }}>Find Matches</Button>
                             </CardContent>
                         </Card>
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Container>
         </div>
     );
