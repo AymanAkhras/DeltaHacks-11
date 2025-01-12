@@ -1,2 +1,7 @@
-PyPDF2==3.0.0
-cohere==4.8.0
+PyPDF2
+cohere
+load_dotenv
+partition_pdf
+pandas
+numpy
+unstructured
