@@ -1,10 +1,12 @@
 import { Card, CardMedia, CardContent, Typography, Button, CardHeader, } from '@mui/material'
+import PlaceIcon from '@mui/icons-material/Place';
+import WorkIcon from '@mui/icons-material/Work';
 import React from 'react'
 
 function InvestorCard({ name, description, industry, location, funding, image }) {
     return (
         <div style={{ margin: '1rem' }}>
-            <Card>
+            <Card sx={{ borderRadius: '16px' }}>
                 <CardHeader title={name} />
                 <CardMedia
                     component="img"
@@ -14,8 +16,15 @@ function InvestorCard({ name, description, industry, location, funding, image })
                     title="Investor"
                 />
                 <CardContent>
-                    <Typography variant="body2" color="textSecondary">{location}</Typography>
-                    <Typography variant="body2" color="textSecondary">{industry} - {funding}</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                        <PlaceIcon style={{ marginRight: '0.5rem' }} />
+                        {location}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                        <WorkIcon style={{ marginRight: '0.5rem' }} />
+                        {industry} | {funding}
+                    </Typography>
+                    <br />
                     <Typography variant="body2" color="textSecondary">{description}</Typography>
 
                     <Button variant="contained" color="primary" style={{ marginTop: '1rem' }}>Connect</Button>

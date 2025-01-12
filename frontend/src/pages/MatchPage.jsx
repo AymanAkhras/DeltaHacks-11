@@ -40,6 +40,10 @@ function MatchPage() {
                 industry="Technology" location="San Francisco" funding="$100k - $200k" image="https://thumbs.dreamstime.com/b/hipster-business-man-walking-takeaway-cup-coffee-wall-background-trendy-old-person-wearing-casual-fashion-clothes-happy-169523000.jpg"
             />
             <Typography variant="h4" style={{ marginTop: '2rem' }}>Suggested for you</Typography>
+
+            <Typography variant="body2" color="textSecondary" style={{ marginTop: '1rem' }}>Connects left today: 3</Typography>
+            <Typography variant="body2" color="textSecondary" style={{ marginTop: '1rem' }}>Base on your interests and history, you might like these investors...</Typography>
+
             {investors.map((investor, index) => (
                 <InvestorCard key={index} name={investor.name} description={investor.description}
                     industry={investor.industry} location={investor.location} funding={investor.funding} image={investor.image}
