@@ -185,7 +185,7 @@ const OnboardingPage = () => {
                     />
                     <Divider sx={{ my: 3 }} />
                     <Typography variant="h6" gutterBottom>
-                        File Upload
+                        Upload Financial Statements/Documents
                     </Typography>
                     <Dropzone {...getRootProps()}>
                         <input {...getInputProps()} />
