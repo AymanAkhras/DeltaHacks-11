@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from '@mui/material/styles'
 import './styles/index.css'
 import App from './App.jsx'
-import theme from './Theme.js'
+import theme from './theme.js'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider theme={theme}>

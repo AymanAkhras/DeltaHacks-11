@@ -3,7 +3,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import WorkIcon from '@mui/icons-material/Work';
 import React from 'react'
 
-function InvestorCard({ name, description, industry, location, funding, image }) {
+function InvestorCard({ name, description, industry, location, funding, image, buttonText="Connect", onClick=()=>{} }) {
     return (
         <div style={{ margin: '1rem' }}>
             <Card sx={{ borderRadius: '16px' }}>
@@ -27,7 +27,7 @@ function InvestorCard({ name, description, industry, location, funding, image })
                     <br />
                     <Typography variant="body2" color="textSecondary">{description}</Typography>
 
-                    <Button variant="contained" color="primary" style={{ marginTop: '1rem' }}>Connect</Button>
+                    <Button variant="contained" color="primary" style={{ marginTop: '1rem' }} onClick={onClick}>{buttonText}</Button>
                 </CardContent>
             </Card>
         </div>
